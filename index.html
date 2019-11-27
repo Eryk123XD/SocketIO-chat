@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+
+    <style>
+        .message-box{
+            height: 40vh;
+            width: 30vw;
+            border: solid 1px black;
+        }
+        .form{
+            width: 30vw;
+        }
+        .hundred{
+            margin-top:10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box" id="message-box">
+
+    </div>
+    <div class="form">
+        <form id="message-form">
+            <input type="text" id="message" class="hundred"/>
+            <button type="submit" class="hundred">Wyślij</button>
+        </form>
+    </div>
+</body>
+</html>
